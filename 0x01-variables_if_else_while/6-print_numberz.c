@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <iostream>
+
 /**
  * main - Entry point
  *
@@ -10,7 +12,7 @@ int main(void)
 
 	while (num < 10)
 	{
-		putchar(char num);
+		putchar('0' + num);
 	}
 	putchar('\n');
 	return (0);
