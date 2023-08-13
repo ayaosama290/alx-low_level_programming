@@ -17,7 +17,7 @@ int main(void)
 		}
 		else
 		{
-			putcha(ch);
+			putchar(ch);
 		}
 		ch++;
 	}
