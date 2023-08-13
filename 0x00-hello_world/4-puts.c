@@ -1,6 +1,5 @@
 #include <stdio.h>
-/* 
- * main - Entry point
+/*  main - Entry point
  *
  * Description: 'this program uses ths (puts) function instead
  * of the (print) function
