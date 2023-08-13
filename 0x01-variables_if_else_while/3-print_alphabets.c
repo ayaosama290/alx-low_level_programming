@@ -13,12 +13,12 @@ int main(void)
 
 	while (ch_small <= end_small)
 	{
-		purchar(ch_small);
+		putchar(ch_small);
 		ch_small++;
 	}
 	while (ch_large <= end_large)
 	{
-		purchar(ch_large);
+		putchar(ch_large);
 		ch_large++;
 	}
 	putchar('\n');
