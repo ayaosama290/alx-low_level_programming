@@ -1,4 +1,5 @@
 #include <stdio.h>
+/* THIS IS THE MAIN FUNCTION */
 int main(void)
 
 {
