@@ -4,12 +4,18 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
+/**
+ * main -Entry point
+ *
+ * Return: 0
+ */
 int main(void)
 {
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX /2;
+	n = rand() - RAND_MAX / 2;
+	n = get_value();
 	/* your code goes there */
 	if (n > 0)
 	{
