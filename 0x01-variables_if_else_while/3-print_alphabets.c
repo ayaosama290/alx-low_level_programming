@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	char ch_small = "a";
-	char end_small = "z";
-	char ch_large = "A";
-	char end_large = "Z";
+	char ch_small = 'a';
+	char end_small = 'z';
+	char ch_large = 'A';
+	char end_large = 'Z';
 
 	while (ch_small <= end_small)
 	{
