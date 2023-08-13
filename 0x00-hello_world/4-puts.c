@@ -1,11 +1,5 @@
 #include <stdio.h>
-/*  main - Entry point
- *
- * Description: 'this program uses ths (puts) function instead
- * of the (print) function
- *
- * Return: Always 0 (Success) '
- */
+/*  main - Entry point */
 int main(void)
 
 {
