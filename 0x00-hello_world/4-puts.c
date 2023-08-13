@@ -5,7 +5,9 @@
  * Description: 'this program uses ths (puts) function instead
  * of the (print) function
  *
- * Return: Always 0 (Success) ' */
+ * Return: Always 0 (Success) '
+ */
+
 int main(void)
 
 {
