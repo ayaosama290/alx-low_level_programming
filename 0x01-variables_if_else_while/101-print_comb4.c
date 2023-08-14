@@ -15,9 +15,9 @@ int main(void)
 		{
 			for (c = b + 1; c >= 9; c++)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(c + '0');
 				if (a < 9 || b < 8 || c < 7)
 				{
 					putchar(',');
