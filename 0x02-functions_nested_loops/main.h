@@ -1,7 +1,7 @@
 #include <stdio.h>
 #ifdef MAIN_H 
 #define MAIN_h
-int _putchar(char j)
+int _putchar(int j)
 {
 	putchar(j);
 	return (0);
