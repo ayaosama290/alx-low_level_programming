@@ -4,7 +4,7 @@ void print_alphabet(void);
 
 int main(void)
 {
-	print_alphabet();
+	int add = print_alphabet();
 	return (0);
 }
 void print_alphabet(void)
@@ -14,7 +14,7 @@ void print_alphabet(void)
 
 	for (first = 'a'; first <= last; first++)
 	{
-		_put char(first + '0');
+		_putchar(first + '0');
 	}
-	_putchar()'\n';
+	_putchar('\n');
 }
