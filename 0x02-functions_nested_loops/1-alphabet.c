@@ -1,10 +1,10 @@
 #include "main.h"
 
-int print_alphabet(void);
+void print_alphabet(void);
 
 int main(void)
 {
-	int print_alphabet();
+	void print_alphabet();
 	return (0);
 }
 void print_alphabet(void)
@@ -17,5 +17,4 @@ void print_alphabet(void)
 		_putchar(first + '0');
 	}
 	_putchar('\n');
-	return (0);
 }
