@@ -7,7 +7,7 @@
  *
  * Return: the value of the last digit
  */
-int _abs(int);
+int _abs(int a);
 int print_last_digit(int z)
 {
 	int i;
