@@ -10,7 +10,7 @@ void print_to_98(int n)
 {
 	if (n < 98) 
 	{
-		for (n; n <= 98; n++)
+		for (; n <= 98; n++)
 		{
 			_putchar(n + 48);
 			_putchar(',');
@@ -19,7 +19,7 @@ void print_to_98(int n)
 	}
 	else if (n > 98)
 	{
-		for (n; n >= 98; n--)
+		for (; n >= 98; n--)
 		{
 			_putchar(n + 48);
 			_putchar(',');
