@@ -26,4 +26,8 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
+	else 
+	{
+		_putchar(n + 48);
+	}
 }
