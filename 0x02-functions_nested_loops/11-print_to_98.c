@@ -12,6 +12,13 @@ void print_to_98(int n)
 	{
 		for (; n <= 98; n++)
 		{
+			if (n < 0 && n > -99)
+			{
+				int neg = -1 * n
+				_putchar('-');
+				_putchar((neg / 10) + 48);
+				_putchar((neg % 10) + 48);
+			}
 			if (n < 10 && n >= 0)
 			{
 				_putchar((n % 10) + 48);
