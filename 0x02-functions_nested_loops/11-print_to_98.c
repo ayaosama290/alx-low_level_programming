@@ -14,7 +14,7 @@ void print_to_98(int n)
 		{
 			if (n < 0 && n > -99)
 			{
-				int neg = -1 * n
+				int neg = -1 * n;
 				_putchar('-');
 				_putchar((neg / 10) + 48);
 				_putchar((neg % 10) + 48);
