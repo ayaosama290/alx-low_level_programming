@@ -2,13 +2,13 @@
 
 int _islower(int c)
 {
-	if (c == 'c')
-	{
-		return (1);
-	}
-	else if (c == 'C')
+	if (c > 64 && c < 91)
 	{
 		return (0);
+	}
+	else
+	{
+		return (1);
 	}
 	return (0);
 }
