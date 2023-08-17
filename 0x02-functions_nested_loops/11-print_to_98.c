@@ -18,6 +18,7 @@ void print_to_98(int n)
 				_putchar('-');
 				_putchar((neg / 10) + 48);
 				_putchar((neg % 10) + 48);
+				neg = -1 * n;
 			}
 			if (n < 10 && n >= 0)
 			{
