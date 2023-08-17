@@ -2,20 +2,25 @@
 /**
  * jack_bauer - prints the 24 hours
  *
- * Description: 
+ * Description: a function that prints the time from 0 to 24 hrs
  *
- * Return:
+ * Return: 0 if there are no errors
  */
 void jack_bauer(void)
 {
 	int hours;
-	int minutes;
+	int min;
 
 	for (hours = 0; hours < 24; hours++ )
 	{
 		for(minutes = 0; minutes < 60 ;minutes++)
 		{
-			_putchar
+			_putchar((hours / 10) + 48);
+			_putchar((hours % 10) + 48);
+			_putchar(':');
+			_putchar((min / 10) + 48);
+			_putchar((min % 10) + 48);
+			_putchar('\n');
 		}
 	}
 	return (0);
