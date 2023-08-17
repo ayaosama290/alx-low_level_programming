@@ -2,8 +2,8 @@
 int _putchar(char c);
 void print_alphabet(void)
 {
-	char first;
-	char last = 'z';
+	int first;
+	int last = 'z';
 
 	for (first = 'a'; first <= last; first++)
 	{
