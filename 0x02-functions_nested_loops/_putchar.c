@@ -1,4 +1,5 @@
 #include <unistd.h>
+3include "main.h"
 /**
  * _putchar - print characters out
  *
