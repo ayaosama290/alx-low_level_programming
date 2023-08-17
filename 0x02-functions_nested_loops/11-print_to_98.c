@@ -11,9 +11,10 @@ void print_to_98(int n)
 {
 	while (n != 98)
 	{
-		for (;n < -9 && n >= -99; n++)
+		for (; n < -9 && n >= -99; n++)
 		{
 			int neg = -1 * n;
+
 			putchar('-');
 			putchar((neg / 10) + 48);
 			putchar((neg % 10) + 48);
@@ -25,6 +26,7 @@ void print_to_98(int n)
 		{
 
 			int neg = -1 * n;
+
 			putchar('-');
 			putchar((neg / 100) + 48);
 			putchar(((neg / 10) % 10) + 48);
@@ -32,13 +34,13 @@ void print_to_98(int n)
 			neg = -1 * n;
 			putchar(',');
 			putchar(' ');
-
 		}
-		for (;n < 0 && n >= -9; n++)
+		for (; n < 0 && n >= -9; n++)
 		{
 			int neg = -1 * n;
+
 			putchar('-');
-			putchar((neg % 10) +48);
+			putchar((neg % 10) + 48);
 			neg = -1 * n;
 			putchar(',');
 			putchar(' ');
@@ -47,7 +49,7 @@ void print_to_98(int n)
 		{
 			if (n > 99)
 			{
-				putchar((n / 100) +48);
+				putchar((n / 100) + 48);
 				putchar(((n / 10) % 10) + 48);
 				putchar((n % 10) + 48);
 				putchar(',');
