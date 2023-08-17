@@ -1,10 +1,11 @@
 #include "main.h"
 /**
- * _abs - 
+ * _abs - checks numbers
  *
- * Description:
+ * Description:a function that returns the absolute value
+ * @a: a parameter that holds the checked value
  *
- * Return:
+ * Return: a + value when + and a + value when -
  */
 int _abs(int a)
 {
