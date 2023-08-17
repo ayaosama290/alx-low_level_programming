@@ -72,6 +72,8 @@ void print_to_98(int n)
                                	_putchar((neg / 10) + 48);
                               	 _putchar((neg % 10) + 48);
                                	 neg = -1 * n;
+				 _putchar(',');
+                                _putchar(' ');
                    	 }
 			else if (n >= -9 && n < 0)
 			{
@@ -79,9 +81,21 @@ void print_to_98(int n)
 				_putchar('-');
 				_putchar((neg % 10) + 48);
 				neg = -1 * n;
+				_putchar(',');
+                                _putchar(' ');
 			}
-			_putchar(',');
-			_putchar(' ');
+			else if (n < 98 && n >= 0)
+			{
+				_putchar((n / 10) + 48);
+				_putchar((n % 10) + 48);
+			        _putchar(',');
+                                _putchar(' ');
+			}
+			else 
+			{
+				_putchar(9 + '0');
+				_putchar(8 + '0');
+			}
 		}
 	}
 }
