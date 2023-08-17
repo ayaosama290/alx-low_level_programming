@@ -1,9 +1,10 @@
 #include "main.h"
 /*
- *print_alphabet - printing alphabets
+ * print_alphabet - printing alphabets
  *
- *Description: 'print alphabets from a to z'
- *Return: 1
+ * Description: 'print alphabets from a to z to the screen'
+ *
+ * Return: 1
  */
 void print_alphabet(void)
 {
