@@ -2,6 +2,7 @@
 /**
  * main - Entry point
  *
+ * @c: prints the output
  * Return: 0
  */
 int _putchar(char c);
