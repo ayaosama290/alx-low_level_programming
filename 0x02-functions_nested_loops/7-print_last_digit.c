@@ -9,7 +9,6 @@
  */
 int print_last_digit(int z)
 {
-	int i;
 	if (z > 0)
 	{
 		return (z % 10);
