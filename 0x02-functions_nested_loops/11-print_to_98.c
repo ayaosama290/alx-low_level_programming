@@ -1,104 +1,82 @@
 #include "main.h"
 /**
- * print_to_98 -
+ * print_to_98 - prints numbers till 98
  *
- * Description:
- * @n:
+ * Description: 'this is a function that takes a no and count till
+ * 98'
+ * @n: the parameter that holds the starting number
  *
  */
 void print_to_98(int n)
 {
-	if (n < 98 && n >= 0) 
-	{
-		for (; n <= 98; n++)
-		{
-			if (n < 10 && n >= 0)
-			{
-				_putchar((n % 10) + 48);
-			}
-			else
-			{
-				_putchar((n / 10) + 48);
-				_putchar((n % 10) + 48);
-			}
-			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-		}
-		_putchar('\n');
-	}
-	else if (n > 98)
-	{
-		for (; n >= 98; n--)
-		{
-			if (n > 99)
-			{
-				_putchar((n / 100) + 48);
-				_putchar(((n / 10) % 10) + 48);
-				_putchar((n % 10) + 48);
-				_putchar(',');
-				_putchar(' ');
-			}
-			else 
-			{
-				_putchar((n / 10) + 48);
-				_putchar((n % 10) + 48);
-				if(n == 99)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
-		}
-		_putchar('\n');
-	}
-	else if (n == 98)
-	{
+	while(n != 98)
+    {
+        for (;n < -9 && n >= -99; n++)
+        {
+            int neg = -1 * n;
+            putchar('-');
+            putchar((neg / 10) + 48);
+            putchar((neg % 10) + 48);
+            neg = -1 * n;
+            putchar(',');
+            putchar(' ');
+        }
+        for (; n < -99; n++)
+        {
 
-		_putchar(9 + '0');
-		_putchar(8 + '0');
-		_putchar('\n');
-	}
-	else
-	{
-		for (;n < 0; n++)
-		{
-			if (n < -9 && n > -99)
-                        {
-                               	int neg = -1 * n;
-                                _putchar('-');
-                               	_putchar((neg / 10) + 48);
-                              	 _putchar((neg % 10) + 48);
-                               	 neg = -1 * n;
-				 _putchar(',');
-                                _putchar(' ');
-                   	 }
-			else if (n >= -9 && n < 0)
-			{
-				int neg = -1 *n;
-				_putchar('-');
-				_putchar((neg % 10) + 48);
-				neg = -1 * n;
-				_putchar(',');
-                                _putchar(' ');
-			}
-			for(;n >= 0; n ++)
-			{
-				if (n < 98 && n >= 0)
-				{
-					_putchar((n / 10) + 48);
-					_putchar((n % 10) + 48);
-			       		 _putchar(',');
-                               		 _putchar(' ');
-				}
-				else 
-				{
-					_putchar(9 + '0');
-					_putchar(8 + '0');
-				}
-			}
-		}
-	}
+            int neg = -1 * n;
+            putchar('-');
+            putchar((neg / 100) + 48);
+            putchar(((neg / 10) % 10) + 48);
+            putchar((neg % 10) + 48);
+            neg = -1 * n;
+            putchar(',');
+            putchar(' ');
+
+        }
+        for (;n < 0 && n >= -9; n++)
+        {
+            int neg = -1 * n;
+            putchar('-');
+            putchar((neg % 10) +48);
+            neg = -1 * n;
+            putchar(',');
+            putchar(' ');
+        }
+        for (; n > 98; n--)
+        {
+            if (n > 99)
+            {
+                putchar((n / 100) +48);
+                putchar(((n / 10) % 10) + 48);
+                putchar((n % 10) + 48);
+                putchar(',');
+                putchar(' ');
+            }
+            else
+            {
+                putchar((n / 10) + 48);
+                putchar((n % 10) + 48);
+                putchar(',');
+                putchar(' ');
+            }
+
+        }
+        for (; n >= 10 && n < 98; n++)
+        {
+            putchar((n / 10) + 48);
+            putchar((n % 10) + 48);
+            putchar(',');
+            putchar(' ');
+        }
+        for (; n >= 0 && n <= 9; n++)
+        {
+            putchar((n % 10) + 48);
+            putchar(',');
+            putchar(' ');
+        }
+    }
+    putchar(9 + '0');
+    putchar(8 + '0');
+    putchar('\n');
 }
