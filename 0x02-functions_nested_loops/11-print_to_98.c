@@ -84,17 +84,20 @@ void print_to_98(int n)
 				_putchar(',');
                                 _putchar(' ');
 			}
-			else if (n < 98 && n >= 0)
+			for(;n >= 0; n ++)
 			{
-				_putchar((n / 10) + 48);
-				_putchar((n % 10) + 48);
-			        _putchar(',');
-                                _putchar(' ');
-			}
-			else 
-			{
-				_putchar(9 + '0');
-				_putchar(8 + '0');
+				if (n < 98 && n >= 0)
+				{
+					_putchar((n / 10) + 48);
+					_putchar((n % 10) + 48);
+			       		 _putchar(',');
+                               		 _putchar(' ');
+				}
+				else 
+				{
+					_putchar(9 + '0');
+					_putchar(8 + '0');
+				}
 			}
 		}
 	}
