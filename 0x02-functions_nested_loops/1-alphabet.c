@@ -1,11 +1,14 @@
 #include "main.h"
+
 /*
  * print_alphabet - printing alphabets
  *
- * Description: 'print alphabets from a to z to the screen'
- *
- * Return: 1
+ * Description: 'this function prints alphabets from a to z'
+ * Return: void
  */
+void print_alphabet(void);
+int _putchar(char c);
+
 void print_alphabet(void)
 {
 	char cc;
