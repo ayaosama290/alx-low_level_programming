@@ -5,7 +5,7 @@
  * @c: parameter that has the checked letter
  * Description: 'a program that checks if a letter is capital'
  *
- * Return :0
+ * Return :0 if the letter is capital otherwise return 1
  */
 int _islower(int c)
 {
