@@ -7,16 +7,15 @@
  *
  * Return: the value of the last digit
  */
-int _abs(int a);
 int print_last_digit(int z)
 {
 	int i;
 
-	for (i =0; i < 2; i++)
+	for (i = 0; i < 2; i++)
 	{
 		if (z > 0)
 		{
-		return (z % 10);
+			return (z % 10);
 		}
 		else if (z < 0)
 		{
@@ -28,5 +27,6 @@ int print_last_digit(int z)
 			return (0);
 		}
 	}
+	i = 0;
 	return (0);
 }
