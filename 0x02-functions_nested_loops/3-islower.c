@@ -1,6 +1,9 @@
 #include "main.h"
 /**
+ * _islower - function that checks letters
+ * @c: parameter that has the checked letter 
  * Description: is a letter capital or not
+ * Return :0
  *
  */
 
