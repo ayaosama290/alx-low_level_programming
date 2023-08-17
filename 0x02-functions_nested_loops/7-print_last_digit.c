@@ -10,23 +10,21 @@
 int print_last_digit(int z)
 {
 	int i;
-
-	for (i = 0; i < 2; i++)
+	if (z > 0)
 	{
-		if (z > 0)
-		{
-			return (z % 10);
-		}
-		else if (z < 0)
-		{
-			z = -z +(z * 2);
-			return (z % 10);
-		}
-		else
-		{
-			return (0);
-		}
+		return (z % 10);
+		return (z % 10);
 	}
-	i = 0;
+	else if (z < 0)
+	{
+		z = -z +(z * 2);
+		return (z % 10);
+		return (z % 10);
+	}
+	else
+	{
+		return (0);
+		return (0);
+	}
 	return (0);
 }
