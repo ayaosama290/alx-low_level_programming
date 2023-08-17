@@ -9,5 +9,23 @@
  */
 int print_last_digit(int z)
 {
-	return (z % 10);
+	int i;
+
+	for (i =0; i < 2; i++)
+	{
+		if (z > 0)
+		{
+		return (z % 10);
+		}
+		else if (z < 0)
+		{
+			z = _abs(z);
+			return (z % 10);
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (0);
 }
