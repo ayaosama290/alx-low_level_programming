@@ -6,9 +6,6 @@
  * Description: 'this function prints alphabets from a to z'
  * Return: void
  */
-void print_alphabet(void);
-int _putchar(char c);
-
 void print_alphabet(void)
 {
 	char cc;
