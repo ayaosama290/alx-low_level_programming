@@ -1,8 +1,8 @@
 #include "main.h"
 /*
- * print_alphabet - printing alphabets 
+ * print_alphabet - printing alphabets
  *
- * Description: 'this is a function that prints the alphabets froma t * o z'
+ * Description: 'print alphabets from a to z'
  *
  */
 void print_alphabet(void)
