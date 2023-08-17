@@ -23,11 +23,28 @@ void print_to_98(int n)
 	{
 		for (; n >= 98; n--)
 		{
-			_putchar((n / 100) +48);
-			_putchar((n / 10) + 48);
-			_putchar((n % 10) + 48);
-			_putchar(',');
-			_putchar(' ');
+			if (n > 99)
+			{
+				_putchar((n / 100) + 48);
+				_putchar((n / 10) + 48);
+				_putchar((n % 10) + 48);
+				_putchar(',');
+				_putchar(' ');
+			}
+			else 
+			{
+				_putchar((n / 10) + 48);
+				_putchar((n % 10) + 48);
+				if(n == 99)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar(' ');
+				}
+			}
 		}
 		_putchar('\n');
 	}
