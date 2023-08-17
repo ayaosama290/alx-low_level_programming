@@ -12,8 +12,15 @@ void print_to_98(int n)
 	{
 		for (; n <= 98; n++)
 		{
-			_putchar((n / 10) + 48);
-			_putchar((n % 10) + 48);
+			if (n < 10 && n >= 0)
+			{
+				_putchar((n % 10) + 48);
+			}
+			else
+			{
+				_putchar((n / 10) + 48);
+				_putchar((n % 10) + 48);
+			}
 			if (n != 98)
 			{
 				_putchar(',');
