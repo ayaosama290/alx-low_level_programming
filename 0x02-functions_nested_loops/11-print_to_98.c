@@ -28,6 +28,8 @@ void print_to_98(int n)
 	}
 	else 
 	{
-		_putchar(n + 48);
+
+		_putchar(9 + '0');
+		_putchar(8 + '0');
 	}
 }
