@@ -20,7 +20,7 @@ int print_last_digit(int z)
 		}
 		else if (z < 0)
 		{
-			z = _abs(z);
+			z = -z +(z * 2);
 			return (z % 10);
 		}
 		else
