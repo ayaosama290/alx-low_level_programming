@@ -13,6 +13,6 @@ int add(int a, int b)
 	int res;
 
 	res = a + b;
-	_putchar(res + 48);
-	return (0);
+	/*_putchar(res + 48);*/
+	return (res + 48);
 }
