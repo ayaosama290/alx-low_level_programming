@@ -1,4 +1,8 @@
 #include "main.h"
+/**
+ * Description: is a letter capital or not
+ *
+ */
 
 int _islower(int c)
 {
