@@ -1,13 +1,9 @@
 #include "main.h"
 
 /*
- * print_alphabet - a function that prints alphabets from
- * a to z
- *
+ * print_alphabet - printing alphabets
  * Return: void
  */
-void print_alphabet(void);
-
 void print_alphabet(void)
 {
 	char cc;
