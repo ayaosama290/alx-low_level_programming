@@ -16,7 +16,7 @@ void print_times_table(int n)
 		{
 			for (col = 0; col < n; col++)
 			{
-				_putchar(rows * col);
+				_putchar((rows * col) + 48);
 				_putchar(',');
 				_putchar(' ');
 			}
