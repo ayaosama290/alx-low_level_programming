@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_times_table -
+ *print_times_table - prints numbers
  *
  * Description: this function prints a table with n number
  * @n: a parameter that holds the checked number
