@@ -9,76 +9,21 @@
  */
 void print_to_98(int n)
 {
-	while (n != 98)
+	int c;
+
+	if (n > 98)
 	{
-		for (; n < -9 && n >= -99; n++)
+		for (c = n; c > 98; c--)
 		{
-			int neg = -1 * n;
-
-			putchar('-');
-			putchar((neg / 10) + 48);
-			putchar((neg % 10) + 48);
-			neg = -1 * n;
-			putchar(',');
-			putchar(' ');
-		}
-		for (; n < -99; n++)
-		{
-
-			int neg = -1 * n;
-
-			putchar('-');
-			putchar((neg / 100) + 48);
-			putchar(((neg / 10) % 10) + 48);
-			putchar((neg % 10) + 48);
-			neg = -1 * n;
-			putchar(',');
-			putchar(' ');
-		}
-		for (; n < 0 && n >= -9; n++)
-		{
-			int neg = -1 * n;
-
-			putchar('-');
-			putchar((neg % 10) + 48);
-			neg = -1 * n;
-			putchar(',');
-			putchar(' ');
-		}
-		for (; n > 98; n--)
-		{
-			if (n > 99)
-			{
-				putchar((n / 100) + 48);
-				putchar(((n / 10) % 10) + 48);
-				putchar((n % 10) + 48);
-				putchar(',');
-				putchar(' ');
-			}
-			else
-			{
-				putchar((n / 10) + 48);
-				putchar((n % 10) + 48);
-				putchar(',');
-				putchar(' ');
-			}
-
-		}
-		for (; n >= 10 && n < 98; n++)
-		{
-			putchar((n / 10) + 48);
-			putchar((n % 10) + 48);
-			putchar(',');
-			putchar(' ');
-		}
-		for (; n >= 0 && n <= 9; n++)
-		{
-			putchar((n % 10) + 48);
-			putchar(',');
-			putchar(' ');
+			printf("%d, ", c);
 		}
 	}
-	putchar(9 + '0');
-	putchar(8 + '0');
-	putchar('\n');
+	else
+	{
+		for (c = n; c < 98; c++)
+		{
+			printf("%d, ", c);
+		}
+		printf("98\n");
+	}
 }
