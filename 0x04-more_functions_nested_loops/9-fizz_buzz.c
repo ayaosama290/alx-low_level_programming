@@ -1,40 +1,35 @@
 #include <stdio.h>
 /**
- * fizz_bizz - fizz buzz
+ * main - fizz buzz
  *
  * Description: a function that prints fizz,buzz,fizzBuzz,numbers.
+ *
+ * Return: 0 success
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int i;
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
+		if ((i % 3) == 0 && (i % 5) == 0)
 			printf("FizzBuzz");
-		}
+
 		else if (i % 3 == 0)
-		{
 			printf("Fizz");
-		}
+
 		else if (i % 5 == 0)
-		{
 			printf("Buzz");
-		}
+
 		else
-		{
-			if (i >= 0 && i <= 9)
-			{
-				putchar(i + 48);
-			}
-			else
-			{
-				putchar((i / 10) + 48);
-				putchar((i % 10) + 48);
-			}
-		}
-		putchar(' ');
+			printf("%d", i);
+
+		if (i == 100)
+			continue;
+		printf(" ");
 	}
+
 	putchar('\n');
+
+	return (0);
 }
