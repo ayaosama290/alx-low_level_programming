@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _isupper -
+ * _isupper - same as isupper()
  *
- * Description: 
- * @c:
+ * Description: this is a function that returns 1 if letter is capital
+ * @c: a parameter that holds checked character
  *
- * Return:
+ * Return: 1 if capital else 0
  */
 int _isupper(int c)
 {
