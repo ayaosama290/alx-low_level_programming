@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 /**
  * fizz_bizz - fizz buzz
@@ -37,6 +36,5 @@ void fizz_buzz(void)
 		}
 		putchar(' ');
 	}
-	_putchar('\n');
+	putchar('\n');
 }
-
