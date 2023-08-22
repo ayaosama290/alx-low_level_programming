@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _put - prints character
+ * _puts - prints character
  *
  * Description: a function that prints characters to stdout
  *
