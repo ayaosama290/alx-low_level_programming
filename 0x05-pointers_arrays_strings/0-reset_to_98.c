@@ -5,6 +5,8 @@
  *
  * @n: the first parameter
  * Return: nothing
+ *
+ * Description: dfjldafh dklhfk lhfklh dh fk h fkl shf hfk hklgahf
  */
 void reset_to_98(int *n)
 {
