@@ -6,9 +6,10 @@
  * @a: the first parameter
  * @b: the second parameter
  */
-void swap_int(int *a,int *b)
+void swap_int(int *a, int *b)
 {
 	int holder;
+
 	holder = *a;
 	*a = *b;
 	*b = holder;
