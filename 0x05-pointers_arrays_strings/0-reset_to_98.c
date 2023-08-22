@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * resert_to_98 - reset pointer
  *
