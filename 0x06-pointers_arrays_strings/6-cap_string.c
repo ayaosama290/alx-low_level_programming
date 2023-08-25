@@ -2,6 +2,8 @@
 #include <stdio.h>
 /**
  * isLower - determine if lower
+ *
+ * Description: difh sdahf fhklda fhkd difu gd
  * @c: parameter
  *
  * Return: 1 or 0
@@ -12,6 +14,8 @@ int isLower(char c)
 }
 /**
  * isDelimiter - determine delimit
+ *
+ * Description: df ldafh fdskafg afksgf dfagsjkfdggf
  * @c: parameter
  * Return: 1 or 0
  */
