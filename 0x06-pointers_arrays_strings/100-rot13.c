@@ -13,7 +13,7 @@ char *rot13(char *s)
 
 	char rot13[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char ROT13[] = "nopqrstuvwxyzabcdefghijklmNOPQRSTUVWXYZABCDEFGHIJKLM";
-	char *pty = s;
+	char *ptr = s;
 
 	while (*s)
 	{
@@ -21,7 +21,7 @@ char *rot13(char *s)
 		{
 			if (*s == rot13[j])
 			{
-				*s = ROT[j];
+				*s = ROT13[j];
 				break;
 			}
 		}
