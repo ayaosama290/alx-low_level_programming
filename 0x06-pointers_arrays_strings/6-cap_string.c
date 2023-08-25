@@ -53,7 +53,7 @@ char *cap_string(char *s)
 		else if (isLower(*s) && foundDelimit)
 		{
 			*s -= 32;
-			foundDelimit 0;
+			foundDelimit = 0;
 		}
 		else
 			foundDelimit = 0;
