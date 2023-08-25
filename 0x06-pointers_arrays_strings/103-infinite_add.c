@@ -1,13 +1,10 @@
 #include "main.h"
 /**
  * infinite_add - adds numbers
- *
- * Description: a function that adds two numbers kg hfkg k
  * @n1: the first parameter
  * @n2: the second parameter
  * @r: the third parameter
  * @size_r: the fourth parameter
- *
  * Return: a character
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
@@ -19,13 +16,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (n2[j] != '\0')
 		j++;
 	if (i > j)
-	{
 		l = i;
-	}
 	else
-	{
 		l = j;
-	}
 	if (l + 1 > size_r)
 		return (0);
 	r[l] = '\0';
