@@ -3,7 +3,7 @@
  * string_toupper - to uppercase
  *
  * Description: a function that changes from lower to upper
- * @str the only parameter
+ * @str: the only parameter
  *
  * Return: a character
  */
