@@ -1,19 +1,24 @@
 #include "main.h"
 /**
- * print_chessboard - print chessboard
- * @a: parameter
- * Return: nothing
+ * _strstr - entry point
+ * @haystack: the first parameter
+ * @needle: the second parameter
+ * Return: a character
  */
-void print_chessboard(char (*a)[8])
+char *_strstr(char *haystack, char *needle)
 {
-	int i, j;
-
-	for (i = 0; i < 8; i++)
+	for(; *haystack != '\0'; haystack++)
 	{
-		for (j = 0; j < 8; j++)
+		char *m = haystack;
+		char *p = needle;
+
+		while (*m == *p && +p != '\0')
 		{
-			_putchar(a[i][j]);
+			m++;
+			p++;
 		}
-		_putchar('\n');
+		if (*p == '\0')
+			return (haystack);
 	}
+	return (0);
 }
