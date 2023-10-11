@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-/*
+/**
  * create_array - create an array with malloc
- *
+ * Description: 'creating an array with malloc function'
  * @size: the first parameter
  * @c: the second parameter
  * Return: n
