@@ -9,6 +9,7 @@
 int _strlen(const char *st)
 {
 	int l = 0;
+
 	while (*st++)
 		l++;
 	return (l);
@@ -39,7 +40,7 @@ char *_strcpy(char *dest, char *src)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
-	
+
 	if (!name || age < 0 || !owner)
 		return (NULL);
 
