@@ -5,7 +5,7 @@
  * free_dog - frees dog
  * @d: the first parameter
  * Return: void
- */ 
+ */
 void free_dog(dog_t *d)
 {
 	if (d)
