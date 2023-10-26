@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_unit - cinverts sm to sm
+ * binary_to_uint - converts sm to sm
  * @b: first
  * Return: an int
  */
