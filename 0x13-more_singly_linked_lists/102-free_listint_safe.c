@@ -29,7 +29,7 @@ listint_t *find_listint_loop_fl(listint_t *head)
  */
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *next, loopnode;
+	listint_t *next, *loopnode;
 	size_t len;
 	int loop = 1;
 
