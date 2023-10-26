@@ -7,6 +7,7 @@
 /**
  * struct listint_s - singly linked lists
  * @n: parameter
+ * @next: a parameter
  */
 typedef struct listint_s
 {
